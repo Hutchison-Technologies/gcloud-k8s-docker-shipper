@@ -1,6 +1,6 @@
-# Google Cloud + Kuberentes deployment
+# Google Cloud + Kubernetes deployment
 
-This docker file aims to help with automated deployment to Kuberentes running on the Google Cloud Platform. The image prepares a container ready to use `gcloud` and `kubectl` command line tools.
+This docker file aims to help with automated deployment to Kubernetes running on the Google Cloud Platform. The image prepares a container ready to use `gcloud` and `kubectl` command line tools.
 
 ## Usage
 
@@ -16,7 +16,7 @@ docker run --rm \
   -e GOOGLE_SQL_KEY_BLOB= \       # base64 encoded JSON key of the service account with SQL API Client role
   -e DATABASE_USER= \             # Credentials required by your app
   -e DATABASE_PASSWORD= \         # Credentials required by your app
-  -e DEPLOYMENT_NAME= \           # Name of your Kuberentes deployment config
+  -e DEPLOYMENT_NAME= \           # Name of your Kubernetes deployment config
   -e CONTAINER_NAME= \            # Name of the container in the deployment config
   -e NEW_IMAGE= \                 # New image to use for the specified container
   hutchisont/gcloud-k8s-docker-shipper \
