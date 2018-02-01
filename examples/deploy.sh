@@ -34,4 +34,4 @@ kubectl create secret generic cloudsql-db-credentials --from-literal=database_us
 kubectl apply -f .
 
 # Update an image of a deployed container
-kubectl set image deployment/$DEPLOYMENT_NAME $CURRENT_IMAGE=$NEW_IMAGE
+kubectl set image deployment/$DEPLOYMENT_NAME $CONTAINER_NAME=$NEW_IMAGE
