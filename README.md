@@ -1,5 +1,7 @@
 # Google Cloud + Kubernetes deployment
 
+[![Docker Build Status](https://img.shields.io/docker/build/hutchisont/gcloud-k8s-docker-shipper.svg)](https://hub.docker.com/r/hutchisont/gcloud-k8s-docker-shipper/)
+
 This docker file aims to help with automated deployment to Kubernetes running on the Google Cloud Platform. The image prepares a container ready to use `gcloud` and `kubectl` command line tools.
 
 ## Usage
